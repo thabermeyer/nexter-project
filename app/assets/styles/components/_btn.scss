@@ -17,6 +17,13 @@
 
     }
 
+    &__header {
+
+        align-self: start;
+        justify-self: start;
+
+    }
+
     &__home {
 
         grid-column: 1 / -1;
