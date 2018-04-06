@@ -10,6 +10,12 @@
     grid-row-gap: 2rem;
     justify-items: center;
 
+    @include respond(tab-port) {
+
+        grid-column: 1 / -1;
+
+    }
+
     &__list {
 
         display: grid;
@@ -17,6 +23,18 @@
         grid-column-gap: 2rem;
         grid-row-gap: 5vh;
         align-items: center;
+
+        @include respond(tab-port) {
+
+            grid-template-columns: repeat(3, min-content max-content);
+    
+        }
+
+        @include respond(phone) {
+
+            grid-template-columns: min-content max-content;
+    
+        }
 
     }
 
